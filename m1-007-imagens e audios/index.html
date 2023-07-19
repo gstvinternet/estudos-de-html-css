@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno300x300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio700x700.png" type="image/png">
+        <img src="imagens/grande1000x1000.png" alt="imagem flexível">
+        <!--como usar fotos que se ajustam de forma automatica de acordo com o tamanho da tela do usuario!-->
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <p>brenda e gato</p>
+    <audio src="midias/brenda.mp3" controls autoplay ></audio>
+    <!--como colocar audios--> <!-- compativel com mp3,wav e ogg-->
+    <audio preloads="auto" autoplay controls loop >
+        <source src="midias/ze ramalho.mp3" type="audio/mp3">
+    </audio>
+    <p>zé ramalho </p>
+    <audio src="midias/ze ramalho.mp3" controls autoplay ></audio>
+    <!-- se caso o navegador nao for compativel com o tipo de mp3 usar isso -->
+    <a href="midias/brenda.mp3"> clique aqui para baixar o arquivo mp3
+      
+</body>
+</html>
