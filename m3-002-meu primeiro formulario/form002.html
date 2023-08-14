@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando controles adcionais</title>
+</head>
+<body>
+    <h3>formulario teste</h3>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusuario">Usuário</label>
+            <input type="text" name="iusuario" id="iusuario" required minlength="5" size="20" placeholder="o ceu é lindo">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="isenha" id="isenha" required maxlength="10" size="15" placeholder="maximo 15 letras">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        <p>
+            <label for="cusario">Usuario</label>
+            <input type="text" name="cusario" id="cusario">
+        </p>
+        <p>
+            <label for="cusenha">Senha</label>
+            <input type="password" name="cusenha" id="cusenha" autocomplete="current-password"> <!-- 
+                current-password recomenda a ultima senha usada pelo usuario
+                em resumo ele da mais acessebilidade é como se lembrasse a senha do usuario para ele mesmo ! 
+             -->
+        </p>
+    </form>
+    
+</body>
+</html>
